@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+    <RelativeLayout
+        android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".SplashActivity"
+        android:visibility="visible">
+        <ImageView
+            android:id="@+id/img_splash_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:paddingBottom="60dp"
+            android:src="@drawable/ic_img_top_splash_2"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/img_splash_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_img_bottom_splash_2"
+            android:scaleType="centerCrop"
+            android:paddingTop="60dp"
+            android:layout_alignParentBottom="true"
+            tools:ignore="ContentDescription" />
+
+        <RelativeLayout
+            android:id="@+id/attendance_splash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/img_splash_logo"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/dot_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/txt_atttendance"
+                android:layout_marginEnd="-30dp"
+                android:layout_marginBottom="-20dp"
+                android:layout_toStartOf="@id/txt_atttendance"
+                android:src="@drawable/img_4_dot_big"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/dot_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/txt_atttendance"
+                android:layout_marginStart="-10dp"
+                android:layout_marginBottom="-30dp"
+                android:layout_toEndOf="@id/txt_atttendance"
+                android:src="@drawable/img_4_dot_small" />
+
+            <TextView
+                android:id="@+id/txt_atttendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/app_name"
+                android:tag="app_name"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#2F5BA9"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_splash_logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:padding="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_empty2"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_splash_logo"
+            android:layout_centerInParent="true"
+            android:text="Management"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/text_color_primary"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/onbroading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_background"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#00000000"
+            android:fontFamily="sans-serif-light"
+            android:padding="16dp"
+            android:text="@string/skip"
+            android:tag="skip"
+            android:textColor="@color/black"
+            android:textFontWeight="500"
+            android:textSize="18sp" />
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btn_skip"
+            android:id="@+id/view_pager"/>
+
+        <LinearLayout
+            android:id="@+id/dotshot"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_alignBottom="@id/view_pager"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_pager">
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="40dp"
+            android:saveEnabled="true"
+            android:background="@drawable/circle_while"
+            android:visibility="invisible"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/white"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+</RelativeLayout>

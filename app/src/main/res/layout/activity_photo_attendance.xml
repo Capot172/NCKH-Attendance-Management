@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".function.class_list.PhotoAttendance"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/statusBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/toolbar_background"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/backS"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_back"
+                android:background="@android:color/transparent"
+                android:onClick="onBack"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Attendance with picture"
+                android:tag="studentInfo"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/loadingPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:background="@android:color/transparent"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:indeterminateTint="#E1DCFA" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loading"
+                android:tag="loading"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/progressBar"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đã điểm danh"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/retange_green_lt"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/present_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/sum_present_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+        <GridView
+            android:visibility="gone"
+            android:id="@+id/grid_list_faces"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:numColumns="2"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:overScrollMode="never"/>
+        <RelativeLayout
+            android:id="@+id/layout_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_empty"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/img_recognize_by_photo" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/img_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chưa có gương mặt nào"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center|bottom"
+            android:weightSum="2"
+            android:layout_margin="25dp">
+
+            <ImageButton
+                android:id="@+id/btn_atendance_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_camera"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/cus_background_corner_10_blue"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:elevation="3dp"/>
+            <ImageButton
+                android:id="@+id/btn_atendance_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_gallery"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/cus_background_corner_10_blue"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:elevation="3dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

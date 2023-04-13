@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/class_question_answer"
+            android:title="@string/qaa"
+            android:icon="@drawable/ic_q_a"/>
+        <item
+            android:id="@+id/class_question_feedback"
+            android:title="@string/sendFeedback"
+            android:icon="@drawable/ic_feed_back"/>
+        <item
+            android:id="@+id/class_policy"
+            android:title="@string/policy"
+            android:icon="@drawable/ic_policy"/>
+        <item
+            android:id="@+id/class_darkmode"
+            android:title="@string/darkMode"
+            android:icon="@drawable/ic_dark_mode"
+            app:actionLayout="@layout/switch_menu"/>
+        <item
+            android:id="@+id/class_language"
+            android:title="@string/language"
+            android:icon="@drawable/ic_language"
+            app:actionLayout="@layout/menu_language" />
+        <item
+            android:id="@+id/class_logout"
+            android:title="@string/logOut"
+            android:icon="@drawable/ic_logout"/>
+    </group>
+
+    <item android:title="@string/other">
+        <menu>
+            <item
+                android:id="@+id/class_version"
+                android:title="@string/version"/>
+        </menu>
+    </item>
+</menu>

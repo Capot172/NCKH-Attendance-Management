@@ -1,0 +1,285 @@
+<resources>
+    <string name="app_name">Attendance</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="nav_drawer_open">Open navigation drawer</string>
+    <string name="nav_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_login">Login</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="feedback">Feedback</string>
+    <string name="english" translatable="false">English</string>
+    <string name="chinese" translatable="false">中文</string>
+    <string name="korean" translatable="false">한국인</string>
+    <string name="vietnamese" translatable="false">Tiếng Việt</string>
+    <string name="japanese" translatable="false">日本</string>
+    <string name="attendance">Điểm danh</string>
+    <string name="manual">Thủ công</string>
+    <string name="scanFace">Quét gương mặt</string>
+    <string name="takePicture">Chụp ảnh</string>
+    <string name="createClass">Tạo lớp</string>
+    <string name="subjectTitle">Tiêu đề môn học</string>
+    <string name="enterSubjectTitle">Nhập tiêu đề môn học</string>
+    <string name="semester">Học kỳ</string>
+    <string name="beginDate">Ngày bắt đầu:</string>
+    <string name="endDate">Ngày kết thúc: </string>
+    <string name="dayOff">Ngày nghỉ</string>
+    <string name="holiday">Ngày nghỉ lễ</string>
+    <string name="timeTable">Thời khoá biểu: </string>
+    <string name="classList">Danh sách lớp học</string>
+    <string name="enterSubjectName">Nhập môn học</string>
+    <string name="classDetails">Chi tiết lớp học</string>
+    <string name="edit">Chỉnh sửa</string>
+    <string name="classRoom">Phòng học\ </string>
+    <string name="classDate">Ngày học</string>
+    <string name="classTime">Thời gian học</string>
+    <string name="beginTime">Giờ bắt đầu: </string>
+    <string name="endTime">Giờ kết thúc: </string>
+    <string name="address">Địa điểm\ </string>
+    <string name="enterAddress">Nhập địa chỉ</string>
+    <string name="sendFeedback">Gửi phản hồi</string>
+    <string name="feedbackThank">Cảm ơn bạn đã phản hồi cho chúng tôi.</string>
+    <string name="student">Học sinh</string>
+    <string name="present">Có mặt: </string>
+    <string name="absent">Vắng: </string>
+    <string name="not">Chưa: </string>
+    <string name="googleSignIn">Đăng nhập bằng Google</string>
+    <string name="version">Phiên bản 1.0.0</string>
+    <string name="schedule">Lịch học</string>
+    <string name="policy">Chính sách quyền riêng tư</string>
+    <string name="questionsAndAnswers">Hỏi và Đáp</string>
+    <string name="otherQuestions">Câu hỏi khác</string>
+    <string name="helpDeviceAndInstall">Hỗ trợ thiết bị, tải xuống ứng dụng</string>
+    <string name="statistic">Thống kê</string>
+    <string name="className">Tên lớp:\ </string>
+    <string name="numberAttendants">Sỉ số:\ </string>
+    <string name="totalDate">Tổng buổi:\ </string>
+    <string name="arrivePercentage">Tỷ lệ đến lớp:\ </string>
+    <string name="today">Hôm nay\ </string>
+    <string name="classTotalDate">Số buổi học: </string>
+    <string name="learnedSessions">Số buổi đã học: </string>
+    <string name="remainingSessions">Số buổi còn lại: </string>
+    <string name="subjectStatistics">Thống kê môn học</string>
+    <string name="week">Tuần</string>
+    <string name="month">Tháng</string>
+    <string name="presentPercentage">Tỷ lệ có mặt</string>
+    <string name="absentPercentage">Tỷ lệ vắng</string>
+    <string name="noClass">Không có lớp</string>
+    <string name="noData">Chưa có dữ liệu</string>
+    <string name="classRoom1">Phòng học:\ </string>
+    <string name="classDate1">Ngày học:\ </string>
+    <string name="time">Thời gian:\ </string>
+    <string name="address1">Địa chỉ:\ </string>
+    <string name="from">Từ\ </string>
+    <string name="to" translatable="false">\ \-\ </string>
+
+    <string name="cancel">Huỷ</string>
+    <string name="create">Tạo</string>
+    <string name="done">Done</string>
+    <string name="delete">Xoá</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="qaa">Các câu hỏi thường gặp</string>
+    <string name="darkMode">Chế độ tối</string>
+    <string name="logOut">Đăng xuất</string>
+    <string name="other">Khác</string>
+    <string name="menuEdit">Sửa</string>
+    <string name="report">Báo cáo</string>
+    <string name="lesson">Buổi học\ </string>
+    <string name="slg1">Điểm danh bằng thủ công,\nquét gương mặt và chụp ảnh</string>
+    <string name="slg2">Rõ ràng, chính xác, khách quan</string>
+    <string name="slg3">Nhanh chóng, tiện lợi, tiết kiệm thời gian</string>
+    <string name="title1">Ứng dụng điểm danh</string>
+    <string name="title2">Thống kê dữ liệu theo từng \nmốc thời gian</string>
+    <string name="title3">Thêm sinh viên bằng file exel</string>
+    <string name="repeat">Lặp lại</string>
+    <string name="editClass">Sửa thông tin lớp</string>
+    <string name="loading" translatable="false">Loading</string>
+    <string name="noLessons">Buổi học trống</string>
+    <string name="plsCreateLesson">Chưa có buổi học nào!\nVui lòng tạo buổi học.</string>
+    <string name="btnCreateLesson">+ Tạo buổi học</string>
+    <string name="plsCreateClass">Chưa có lớp học nào!\nVui lòng tạo lớp học.</string>
+    <string name="btnCreateClass">+ Tạo lớp học</string>
+    <string name="session">\ Buổi\ </string>
+    <string name="hint_room"><i>Vd: P102</i></string>
+    <string name="hint_address"><i>Vd: 110B Nguyễn Hữu Thọ</i></string>
+    <string name="late">Trễ:\ </string>
+    <string name="txt_subject" translatable="false">Subjects</string>
+    <string name="txt_lesson" translatable="false">Lesson</string>
+    <string name="fomat_dmy" translatable="false">dd-MM-yyyy</string>
+    <string name="fomat_hm" translatable="false">HH:mm</string>
+    <string name="deleteAll">Bạn có chắc bạn muốn xoá tất cả các lớp không?</string>
+    <string name="deleteClass">Bạn có chắc bạn muốn xoá lớp này không?</string>
+    <string name="noStudent">Danh sách sinh viên trống</string>
+    <string name="plsAddStudent">Bạn chưa có sinh viên nào!\nVui lòng thêm sinh viên.</string>
+    <string name="exampleName"><i>Nguyễn Văn A</i></string>
+    <string name="exampleID"><i>Ví dụ: 012345678</i></string>
+    <string name="examplePhone"><i>Ví dụ: 096739763</i></string>
+    <string name="exampleEmail"><i>Ví dụ: abc@gmail.com</i></string>
+    <string name="fullName">Tên đầy đủ</string>
+    <string name="studentID">Mã học sinh/sinh viên</string>
+    <string name="phoneNumber">Số điện thoại</string>
+    <string name="email">Email</string>
+    <string name="studentInfo">Thông tin học sinh</string>
+    <string name="studentInfoName">Tên: </string>
+    <string name="studentInfoID" translatable="false">ID: </string>
+    <string name="studentInfoPhone">SĐT: </string>
+    <string name="studentInfoEmail">Email: </string>
+    <string name="studentInfoTotal">Tổng</string>
+    <string name="path_author" translatable="false">com.atechclass.attendance.fileprovider</string>
+    <string name="txt_absent">Vắng</string>
+    <string name="txt_present">Có mặt</string>
+    <string name="txt_late">Trễ</string>
+    <string name="txt_phone">Điện thoại</string>
+    <string name="txt_sum">Tổng kết</string>
+    <string name="createLesson">Tạo buổi học</string>
+    <string name="latePercentage">Tỉ lệ trễ</string>
+    <string name="all">Tất cả</string>
+    <string name="sum">Tổng</string>
+    <string name="attendance_all">Điểm danh tất cả</string>
+    <string name="enter_name">Nhập tên sinh viên</string>
+    <string name="select_color">Chọn màu sắc</string>
+    <string name="update_information">Cập nhật thông tin</string>
+    <string name="add_student">+ Thêm sinh viên</string>
+    <string name="addStudent">Thêm sinh viên</string>
+    <string name="full_name_from">Họ và tên từ: </string>
+    <string name="one_column">Một cột</string>
+    <string name="two_column">Hai cột</string>
+    <string name="full_name">Họ và tên</string>
+    <string name="surname">Họ</string>
+    <string name="delete_qa">Bạn có chắc bạn muốn xoá học sinh này không?</string>
+    <string name="enter_ID">Nhập mã học sinh/sinh viên</string>
+    <string name="skip">BỎ QUA</string>
+
+    <string name="question_1">Câu hỏi 1: Làm thế nào để tạo một lớp học?</string>
+    <string name="answer_1">Trả lời: Đầu tiên bạn bấm vào nút tạo có dấu cộng bên dưới góc phải màn hình. Khi đó màn hình tạo lớp sẽ xuất hiện. Tiếp theo, điền thông tin của lớp học.</string>
+    <string name="question_2">Câu hỏi 2: Làm thế nào để tạo một buổi học?</string>
+    <string name="answer_2">Trả lời: Đầu tiên hãy vào lớp học mà bạn muốn tạo buổi học. Bạn hãy bấm vào nút tạo có dấu cộng bên dưới góc phải màn hình. Khi đó màn hình tạo buổi học sẽ xuất hiện. Tiếp theo, hãy điền thông tin của buổi học đó.</string>
+    <string name="question_3">Câu hỏi 3: Thêm học sinh như thế nào?</string>
+    <string name="answer_3">Trả lời: Hãy vào lớp học bạn muốn thêm sinh viên. Đi đến phần học sinh. Bạn hãy bấm vào nút tạo có dấu cộng bên dưới góc phải màn hình. Lúc này bạn có 2 sự lựa chọn là thêm sinh viên thủ công hoặc thêm sinh viên bằng cách import. Hãy lựa chọn 1 trong 2</string>
+    <string name="question_4"> Câu hỏi 4: Có tất cả bao nhiêu cách điểm danh</string>
+    <string name="answer_4">Trả lời: Có tất cả 3 cách điểm danh. Gồm điểm danh thủ công, điểm danh bằng quét gương mặt và điểm danh bằng cách chụp ảnh</string>
+    <string name="question_5">Câu hỏi 5: Điểm danh thủ công sử dụng như thế nào</string>
+    <string name="answer_5">Trả lời: Hãy chọn buổi học mà bạn muốn điểm danh. Sau đó, bạn hãy lựa chọn màu sắc tương ứng cho từng trạng thái của sinh viên rồi click vào ô vuông bên phải tên sinh viên</string>
+    <string name="question_6">Câu hỏi 6: Điểm danh bằng quét gương mặt sử dụng như thế nào?</string>
+    <string name="answer_6">Trả lời: Bạn hãy nhìn lên phía trên góc phải màn hình. Tại đây bạn sẽ thấy hai biểu tượng. Hãy chọn biểu tượng có hình người. Với lần chọn đầu tiên ứng dụng sẽ hỏi quyền. Nếu muốn sử dụng tiếp bạn hãy chọn Cho phép. Sau đó màn hình sẽ chuyển qua camera. Nếu là lần đầu tiên hãy ấn nút thêm gương mặt bên góc phải màn hình.</string>
+    <string name="question_7">Câu hỏi 7: Điểm danh bằng chụp ảnh sử dụng như thế nào?</string>
+    <string name="answer_7">Trả lời: Tương tự như điểm danh quét gương mặt. Bạn hãy chọn biểu tượng có hình máy ảnh. Sau đó bạn sẽ có hai sự lựa chọn là lấy ảnh từ thư viện hoặc chụp một tấm hình.</string>
+    <string name="question_8">Câu hỏi 8: Phần thống kê gồm những nội dung gì?</string>
+    <string name="answer_8">Trả lời: Phần thống kê sẽ giúp người dùng xem được bao nhiêu buổi đã học và chưa học. Ngoài ra người dùng có thể xem được tỉ lệ đến lớp của sinh viên trong từng ngày, tuần, tháng.</string>
+
+    <string name="add">Thêm</string>
+    <string name="edit_information_student">Sửa thông tin học sinh</string>
+    <string name="enter_phonenumber">Nhập số điện thoại</string>
+    <string name="enter_email">Nhập email</string>
+    <string name="tutorial">Hướng dẫn</string>
+    <string name="open_file_exel">1. Mở file excel chứa thông tin cần thêm.</string>
+    <string name="copy_information">2. Sao chép thông tin cần thêm.</string>
+    <string name="go_to_app">3. Đi tới ứng dụng điểm danh</string>
+    <string name="add_student_from_clipboard">4. Thêm sinh viên từ bộ nhớ tạm</string>
+    <string name="oke">Đã hiểu</string>
+    <string name="enter_student">Nhập sinh viên/ học sinh</string>
+    <string name="from_clipboard">Từ bảng ghi nhớ tạm</string>
+    <string name="from_exel">Từ Excel</string>
+    <string name="refuse">Từ chối</string>
+    <string name="accept">Chấp nhận</string>
+    <string name="select_language">Chọn ngôn ngữ</string>
+    <string name="select_all">Chọn tất cả</string>
+    <string name="three_type_of_attendance">Điểm danh bằng thủ công,\nquét gương mặt và chụp ảnh</string>
+    <string name="full_name_import">Họ và tên: </string>
+    <string name="phone">Số điện thoại: </string>
+    <string name="email_import">Email: </string>
+    <string name="tfe_od_camera_error" translatable="false" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+    <string name="date_repeat">Ngày lặp</string>
+    <string name="end_from_date">Kết thúc đến ngày...</string>
+    <string name="end_repeat_after">Kết thúc lặp sau</string>
+    <string name="noCheckedStudents">Không có dữ liệu!</string>
+    <string name="noCheckedStudentsTxt">Bạn chưa chọn sinh viên nào, vui lòng chọn lại.</string>
+    <string name="ok">OK</string>
+    <string name="noneCol">Không</string>
+    <string name="col">Cột\ </string>
+    <string name="notify">Thông báo!</string>
+    <string name="invalidCol">Số cột không hợp lệ, vui lòng chọn số cột lớn hơn hoặc bằng 2</string>
+    <string name="invalidID">Những sinh viên sau có ID không hợp lệ, vui lòng sửa lại.</string>
+    <string name="invalidName">Những sinh viên sau có tên không hợp lệ, vui lòng sửa lại.</string>
+    <string name="invalidEmail">Những sinh viên sau có email không hợp lệ, vui lòng sửa lại.</string>
+    <string name="apply">Áp dụng</string>
+    <string name="duplicateId">Những sinh viên sau có ID trùng với ID trong danh sách cũ, hãy chọn những người bạn muốn ghi đè.</string>
+    <string name="txt_percent_present">Tỷ lệ có mặt (%)</string>
+    <string name="txt_stt">STT</string>
+    <string name="txt_first_name">Họ</string>
+    <string name="txt_last_name">Tên</string>
+
+    <string name="mon">T2</string>
+    <string name="tue">T3</string>
+    <string name="wed">T4</string>
+    <string name="thu">T5</string>
+    <string name="fri">T6</string>
+    <string name="sat">T7</string>
+    <string name="sun">CN</string>
+
+    <string name="week_one">Tuần 1</string>
+    <string name="week_two">Tuần 2</string>
+    <string name="week_three">Tuần 3</string>
+    <string name="week_four">Tuần 4</string>
+
+    <string name="january">Tháng 1</string>
+    <string name="february">Tháng 2</string>
+    <string name="march">Tháng 3</string>
+    <string name="april">Tháng 4</string>
+    <string name="may">Tháng 5</string>
+    <string name="june">Tháng 6</string>
+    <string name="july">Tháng 7</string>
+    <string name="august">Tháng 8</string>
+    <string name="september">Tháng 9</string>
+    <string name="october">Tháng 10</string>
+    <string name="november">Tháng 11</string>
+    <string name="december">Tháng 12</string>
+
+    <string name="month_repeat">Lặp tháng</string>
+    <string name="times">lần</string>
+    <string name="attendance_list">Danh sách đã điểm danh</string>
+    <string name="enter_lesson_search">Nhập buổi cần tìm</string>
+    <string name="Licensing">Cấp phép</string>
+    <string name="request">Chúng tôi cần có quyền truy cập để có thể chụp ảnh và quay video</string>
+    <string name="the_title">Tiêu đề</string>
+    <string name="avt">Ảnh đại diện</string>
+    <string name="lesson_student"> buổi </string>
+    <string name="noLesson">Không có buổi học nào hôm nay</string>
+    <string name="every_day">Hàng ngày</string>
+    <string name="every_week">Hàng tuần</string>
+    <string name="every_month">Hàng tháng</string>
+    <string name="classRoom_not_empty">Phòng học không được để trống</string>
+    <string name="address_not_empty">Địa chỉ không được để trống</string>
+    <string name="invalid_time">Thời gian không hợp lệ!!!</string>
+    <string name="no_lessons_create">Không có buổi học được khởi tạo</string>
+    <string name="yes">Có</string>
+    <string name="do_you_want_continue">Dữ liệu buổi học chưa có, bạn có muốn tiếp tục?</string>
+    <string name="every_month_on">Hàng tháng vào ngày </string>
+    <string name="first_of_every_month"> đầu tiên hàng tháng</string>
+    <string name="the_end_date">Ngày kết thúc cách ngày bắt đầu tối đa 3 năm</string>
+    <string name="the_start_date">Ngày bắt đầu cách ngày kết thúc tối đa 3 năm</string>
+    <string name="no_empty">Không được để trống</string>
+    <string name="haved_studentID">Đã có học sinh có mã này</string>
+    <string name="invalid_email">Email không hợp lệ</string>
+    <string name="permission_successfully">Đã cấp quyền thành công</string>
+    <string name="successful_attendance"> điểm danh thành công</string>
+    <string name="tutorial_attendance">Hãy đưa mặt vào chính giữa khung hình</string>
+    <string name="not_open_file">Không thể mở file</string>
+    <string name="file_not_exist">File không tồn tại</string>
+    <string name="pls_enter_information">Vui lòng nhập đủ thông tin</string>
+    <string name="pls_login_again">Phiên đăng nhập đã hết hạn vui lòng đăng nhập lại</string>
+    <string name="check_login">Kiểm tra đăng nhập...</string>
+    <string name="finish">Kết thúc</string>
+    <string name="txt_face_data">Dữ liệu gương mặt</string>
+    <string name="txt_confirm_delete_lesson">Bạn có chắc chắn muốn xóa buổi học này?</string>
+    <string name="add_face">Thêm khuôn mặt</string>
+
+</resources>

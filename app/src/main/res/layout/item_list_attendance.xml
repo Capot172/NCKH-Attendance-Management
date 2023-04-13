@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/cus_background_student">
+            <TextView
+                android:id="@+id/serial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/text_color_primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="13dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_name_students"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Nguyen Van A"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textFontWeight="500"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_vertical" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/studentInfoID"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical"
+                        android:tag="studentInfoID"/>
+                    <TextView
+                        android:id="@+id/txt_id_students"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="23456"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_change_present"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/img_check"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radio_button_checked_red"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

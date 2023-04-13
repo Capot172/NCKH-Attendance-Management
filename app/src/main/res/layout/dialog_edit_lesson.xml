@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cus_background_corner_10_purple">
+
+        <LinearLayout
+            android:id="@+id/class_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/classRoom"
+                android:tag="classroom"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/dialog_edt_class_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cus_background_corner_10_white"
+                android:hint="@string/hint_room"
+                android:textColorHint="@color/color_2"
+                android:tag="hint_room"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subject_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/class_room"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/address"
+                android:tag="address"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/dialog_edt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cus_background_corner_10_white"
+                android:hint="@string/hint_address"
+                android:textColorHint="@color/color_2"
+                android:tag="hint_address"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subject_title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/time"
+                android:tag="time"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cus_background_corner_10_white"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/class_room"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/classTime"
+                        android:tag="classTime"
+                        android:textColor="@color/black"
+                        android:textFontWeight="500"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp" />
+
+                    <LinearLayout
+                        android:id="@+id/dialog_container_time_start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/cus_background_corner_10_purple"
+                        android:elevation="3dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center_vertical"
+                            android:text="@string/beginTime"
+                            android:tag="beginTime"
+                            android:textColor="@color/black"
+                            android:textFontWeight="400"
+                            android:textSize="14sp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:visibility="gone"
+                                android:id="@+id/img_error"
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_error" />
+
+                            <TextView
+                                android:id="@+id/dialog_time_start"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="sans-serif"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/black"
+                                android:text="13:00"
+                                android:textFontWeight="400"
+                                android:textSize="14sp"
+                                android:padding="10dp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:background="@drawable/img_bgr_calendar"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_time_00"
+                            android:paddingRight="-10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dialog_container_time_end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/cus_background_corner_10_purple"
+                        android:elevation="3dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center_vertical"
+                            android:text="@string/endTime"
+                            android:tag="endTime"
+                            android:textColor="@color/black"
+                            android:textFontWeight="400"
+                            android:textSize="14sp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp" />
+
+                        <TextView
+                            android:id="@+id/dialog_time_end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:text="15:00"
+                            android:textFontWeight="400"
+                            android:textSize="14sp"
+                            android:padding="10dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:background="@drawable/img_bgr_calendar"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_time_00"
+                            android:paddingRight="-10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/class_room"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/classDate"
+                        android:tag="classDate"
+                        android:textColor="@color/black"
+                        android:textFontWeight="500"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp" />
+
+                    <LinearLayout
+                        android:id="@+id/dialog_container_day_start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/cus_background_corner_10_purple"
+                        android:elevation="3dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center_vertical"
+                            android:text="@string/beginDate"
+                            android:tag="beginDate"
+                            android:textColor="@color/black"
+                            android:textFontWeight="400"
+                            android:textSize="14sp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/dialog_txt_day_start"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/black"
+                                android:text="01/01/1990"
+                                android:textFontWeight="400"
+                                android:textSize="14sp"
+                                android:padding="10dp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:background="@drawable/img_bgr_calendar"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_calendar_blue"
+                            android:paddingRight="-10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/dialog_btn_confirm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/btn_color"
+                    android:elevation="3dp"
+                    android:text="@string/edit"
+                    android:tag="edit"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

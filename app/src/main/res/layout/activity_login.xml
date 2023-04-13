@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_img_bgr_top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_img_bgr_bot"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="ContentDescription"/>
+
+    <RelativeLayout
+        android:id="@+id/attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/img_splash_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/txt_atttendance"
+            android:layout_marginEnd="-30dp"
+            android:layout_marginBottom="-20dp"
+            android:layout_toStartOf="@id/txt_atttendance"
+            android:src="@drawable/img_4_dot_big"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/txt_atttendance"
+            android:layout_marginStart="-10dp"
+            android:layout_marginBottom="-30dp"
+            android:layout_toEndOf="@id/txt_atttendance"
+            android:src="@drawable/img_4_dot_small" />
+
+        <TextView
+            android:id="@+id/txt_atttendance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Attendance"
+            android:textAlignment="center"
+            android:textColor="@color/color_status_bar"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_atttendance"
+            android:layout_centerInParent="true"
+            android:text="management"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/img_splash_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/cus_btn_login"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_google"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/googleSignIn"
+            android:tag="googleSignIn"
+            android:textColor="@color/text_color_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/version"
+        android:tag="version"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+
+</RelativeLayout>

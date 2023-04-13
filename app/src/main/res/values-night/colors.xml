@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Color primary -->
+    <color name="white_no_change">#FFFFFF</color>
+    <color name="black_no_change">#000000</color>
+    <color name="black">#FFFFFF</color>
+    <color name="white">#000000</color>
+
+    <!--    set color activity main-->
+    <color name="color_status_bar">#4B4B4B</color>
+    <color name="color_background_main">#1F1F1F</color>
+    <color name="back_ground_btn_delete">#FF6F69</color>
+    <color name="class_background">#4B4B4B</color>
+    <color name="text_clock_background">#5685BA</color>
+    <color name="background_time">#333333</color>
+    <color name="color_img_create_lesson">#5A5A5A</color>
+    <color name="primary_background">#2C2C2C</color>
+    <color name="primary_background_2">#5685BA</color>
+    <color name="item_subject">#3E3E3E</color>
+
+    <!-- set color lessonModels -->
+    <color name="color_column">#6CAEF9</color>
+    <color name="background_fragment">#1F1F1F</color>///2C2C2C
+    <color name="color_btn_report_non">#3E3E3E</color>
+    <color name="color_btn_lesson">#5685BA</color> //nen
+    <color name="color_search">#3E3E3E</color>
+    <color name="color_icon_navi">#6CAEF9</color>
+    <color name="text_color_primary">#FFFFFFFF</color>
+    <color name="btn_color">#2E5288</color>
+    <color name="color_2">#FFFFFFFF</color>
+
+    <color name="background_student_item">#3E3E3E</color>
+    <color name="background_detail">#1F1F1F</color>
+    <color name="lessons_detail">#2C2C2C</color>//bgr 1F1F1F
+    <color name="btn_report_background">#1F1F1F</color>
+
+    <color name="btn_color_primary">#6CAEF9</color>
+    <color name="toolbar_background">#3E3E3E</color>
+    <color name="color_btn_report">#6CAEF9</color>
+    <color name="second_background">#6CAEF9</color>
+
+    <color name="pastel_red">#F27373</color>
+    <color name="pastel_yellow">#F8FC2A</color>
+    <color name="pastel_green">#53C781</color>
+    <color name="text_login">#7A7A7A</color>
+    <color name="color_grey">#3E3E3E</color>
+    <color name="color_circle_student_inf">#3E3E3E</color>
+    <color name="add_face">#3E3E3E</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="line_color">#3E3E3E</color>
+    <color name="color_detail">#ffffff</color>
+    <color name="dark_purple">#C9C0E2</color>
+    <color name="color_dark_blue">#ffffff</color>
+</resources>

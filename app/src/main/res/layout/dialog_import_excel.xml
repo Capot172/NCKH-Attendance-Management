@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/cus_background_corner_10_white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tutorial"
+            android:tag="tutorial"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/open_file_exel"
+            android:tag="open_file_exel"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/copy_information"
+            android:tag="copy_information"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/go_to_app"
+            android:tag="go_to_app"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_student_from_clipboard"
+            android:tag="add_student_from_clipboard"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_excel_understand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="@string/oke"
+                android:tag="oke"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/btn_color"
+                android:layout_gravity="center"
+                android:layout_margin="5dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

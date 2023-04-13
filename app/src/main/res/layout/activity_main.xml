@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+     <androidx.coordinatorlayout.widget.CoordinatorLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         tools:context=".MainActivity"
+         android:background="@color/color_background_main">
+
+          <com.google.android.material.floatingactionbutton.FloatingActionButton
+              android:id="@+id/btn_create"
+              android:layout_width="55dp"
+              android:layout_height="55dp"
+              android:layout_marginEnd="30dp"
+              android:layout_marginBottom="30dp"
+              android:layout_gravity="bottom|end"
+              android:elevation="5dp"
+              app:backgroundTint="@color/btn_color_primary"
+              app:elevation="3dp"
+              app:srcCompat="@drawable/ic_add"
+              app:tint="@color/white"
+              tools:ignore="ContentDescription" />
+
+          <com.google.android.material.appbar.AppBarLayout
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:background="@android:color/transparent"
+              android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+              android:layout_gravity="top">
+
+               <com.google.android.material.appbar.CollapsingToolbarLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="214dp"
+                   app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                   app:titleEnabled="false">
+
+                    <RelativeLayout
+                        android:id="@+id/container_daytime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="88dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/cus_rectangle"
+                        app:layout_collapseMode="parallax">
+
+                         <LinearLayout
+                             android:id="@+id/container_oClock"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerHorizontal="true"
+                             android:layout_marginTop="15dp"
+                             android:layout_marginBottom="10dp"
+                             android:orientation="horizontal">
+
+                              <TextClock
+                                  android:layout_width="60dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginEnd="10dp"
+                                  android:background="@drawable/cus_text_clock"
+                                  android:format24Hour="HH"
+                                  android:format12Hour="HH"
+                                  android:timeZone="GMT+7"
+                                  android:gravity="center"
+                                  android:letterSpacing=".2"
+                                  android:padding="5dp"
+                                  android:textColor="@color/black"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold" />
+
+                              <TextClock
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:format24Hour=":"
+                                  android:format12Hour=":"
+                                  android:textColor="@color/black"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold" />
+
+                              <TextClock
+                                  android:layout_width="60dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginLeft="10dp"
+                                  android:layout_marginRight="10dp"
+                                  android:background="@drawable/cus_text_clock"
+                                  android:format24Hour="mm"
+                                  android:format12Hour="mm"
+                                  android:gravity="center"
+                                  android:letterSpacing=".2"
+                                  android:padding="5dp"
+                                  android:textColor="@color/black"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold" />
+
+                              <TextClock
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:format24Hour=":"
+                                  android:format12Hour=":"
+                                  android:textColor="@color/black"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold" />
+
+                              <TextClock
+                                  android:layout_width="60dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginStart="10dp"
+                                  android:background="@drawable/cus_text_clock"
+                                  android:format24Hour="ss"
+                                  android:format12Hour="ss"
+                                  android:gravity="center"
+                                  android:letterSpacing=".2"
+                                  android:padding="5dp"
+                                  android:textColor="@color/black"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold" />
+                         </LinearLayout>
+
+                         <TextClock
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_below="@+id/container_oClock"
+                             android:layout_centerHorizontal="true"
+                             android:layout_marginBottom="15dp"
+                             android:format24Hour="EEEE, dd MMMM, yyyy"
+                             android:format12Hour="EEEE, dd MMMM, yyyy"
+                             android:textColor="@color/black"
+                             android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_gravity="top"
+                        android:background="@color/toolbar_background"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                        app:layout_collapseMode="pin"
+                        app:title="Attendance"
+                        app:titleTextColor="@color/black">
+
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:id="@+id/img_toolbar_avatar"
+                             android:layout_width="35dp"
+                             android:layout_height="35dp"
+                             android:layout_gravity="end|center_vertical"
+                             android:layout_marginEnd="15dp"
+                             android:src="@drawable/img_item_class"
+                             app:civ_border_color="@color/black"
+                             app:civ_border_width="1dp" />
+
+                    </androidx.appcompat.widget.Toolbar>
+
+               </com.google.android.material.appbar.CollapsingToolbarLayout>
+          </com.google.android.material.appbar.AppBarLayout>
+
+          <RelativeLayout
+              android:id="@+id/scrollView"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/container_daytime"
+              android:layout_alignParentBottom="true"
+              android:background="@color/primary_background"
+              app:layout_behavior="@string/appbar_scrolling_view_behavior"
+              android:tag="appbar_scrolling_view_behavior">
+               <LinearLayout
+                   android:id="@+id/noClass"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/txtTitleClass"
+                   android:orientation="vertical"
+                   android:background="@drawable/cus_background_corner_10_white"
+                   android:padding="30dp"
+                   android:layout_margin="30dp"
+                   android:visibility="gone">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_img_empty_data"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/noClass"
+                        android:tag="noClass"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/plsCreateClass"
+                        android:tag="plsCreateClass"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"/>
+               </LinearLayout>
+               <RelativeLayout
+                   android:id="@+id/loadingPanel"
+                   android:layout_below="@id/txtTitleClass"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerHorizontal="true"
+                   android:padding="15dp"
+                   android:background="@drawable/cus_background_corner_10_white">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:indeterminate="true"
+                        android:indeterminateTint="@color/color_status_bar" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:tag="loading"
+                        android:layout_below="@+id/progressBar"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+               </RelativeLayout>
+
+               <LinearLayout
+                   android:id="@+id/txtTitleClass"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="25dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/classList"
+                        android:tag="classList"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif"
+                        android:textFontWeight="500"/>
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_delete_all"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/cus_item_recycler"
+                        android:elevation="3dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp"
+                        android:src="@drawable/ic_trash" />
+               </LinearLayout>
+
+               <androidx.core.widget.NestedScrollView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_below="@id/txtTitleClass">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                         <LinearLayout
+                             android:id="@+id/classToday"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:orientation="vertical"
+                             android:visibility="gone">
+
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:paddingLeft="25dp"
+                                  android:paddingRight="25dp"
+                                  android:paddingBottom="10dp"
+                                  android:text="@string/today"
+                                  android:tag="today"
+                                  android:textSize="18sp"
+                                  android:textStyle="bold" />
+
+                              <View
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="1dp"
+                                  android:layout_marginLeft="25dp"
+                                  android:layout_marginRight="25dp"
+                                  android:layout_marginBottom="10dp"
+                                  android:background="@color/black" />
+
+                              <androidx.recyclerview.widget.RecyclerView
+                                  android:id="@+id/rcvItemClassTodayList"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:overScrollMode="never"
+                                  android:paddingStart="10dp"
+                                  android:paddingEnd="10dp" />
+
+                              <View
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="1dp"
+                                  android:layout_marginLeft="25dp"
+                                  android:layout_marginTop="10dp"
+                                  android:layout_marginRight="25dp"
+                                  android:layout_marginBottom="10dp"
+                                  android:background="@color/black" />
+                         </LinearLayout>
+
+                         <androidx.recyclerview.widget.RecyclerView
+                             android:id="@+id/rcvItemClassList"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:layout_below="@id/classToday"
+                             android:layout_marginBottom="30dp"
+                             android:overScrollMode="never"
+                             android:paddingStart="10dp"
+                             android:paddingEnd="10dp" />
+                    </RelativeLayout>
+               </androidx.core.widget.NestedScrollView>
+          </RelativeLayout>
+     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+     <com.google.android.material.navigation.NavigationView
+         android:id="@+id/nav_view"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:fitsSystemWindows="true"
+         app:headerLayout="@layout/nav_header_layout"
+         android:layout_gravity="start"
+         app:menu="@menu/menu_header_item"
+         android:visibility="visible"/>
+</androidx.drawerlayout.widget.DrawerLayout>

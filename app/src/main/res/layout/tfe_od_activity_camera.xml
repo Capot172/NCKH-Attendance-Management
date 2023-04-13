@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="org.tensorflow.demo.CameraActivity" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bottom_sheet"
+        layout="@layout/tfe_layout_bottom_sheet"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/container_action"
+        android:paddingTop="@dimen/status_bar_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@drawable/cus_background_grey_circle_50">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_switchcam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTintMode="src_in"
+            app:backgroundTint="@color/color_grey_50"
+            app:srcCompat="@drawable/ic_baseline_flip_camera"
+            app:tint="@color/white_no_change"
+            android:layout_margin="16dp"
+            app:elevation="0dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:backgroundTintMode="src_in"
+            app:backgroundTint="@color/btn_color"
+            app:srcCompat="@drawable/ic_back"
+            app:tint="@color/white_no_change"
+            android:layout_margin="16dp"
+            app:elevation="0dp"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_status_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            app:backgroundTint="@color/btn_color"
+            app:srcCompat="@drawable/ic_add_student"
+            app:tint="@color/white_no_change"
+            android:layout_margin="16dp"
+            app:elevation="0dp"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabCustomSize="70dp"
+        app:backgroundTint="@color/btn_color"
+        app:srcCompat="@drawable/ic_add"
+        app:tint="@color/white_no_change"
+        style="@style/FloatingActionButtonStyle"
+        android:layout_marginBottom="100dp"
+        app:elevation="0dp"
+        android:visibility="gone"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:elevation="5dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:background="@drawable/cus_background_corner_10_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/cus_background_corner_10_purple">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_language"
+            android:tag="select_language"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textSize="18sp"
+            android:layout_margin="10dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/radio_group"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_vietnamese"
+                android:text="@string/vietnamese"
+                android:tag="vietnamese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:buttonTint="@color/black"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radio_chinese"
+                android:text="@string/chinese"
+                android:tag="chinese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:buttonTint="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/radio_korean"
+                android:text="@string/korean"
+                android:tag="korean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:buttonTint="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/radio_english"
+                android:text="@string/english"
+                android:tag="english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:buttonTint="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radio_japanese"
+                android:text="@string/japanese"
+                android:tag="japanese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:buttonTint="@color/black"/>
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/cancel"
+            android:tag="cancel"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/line_color"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/apply"
+            android:tag="apply"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/btn_color"/>
+
+    </LinearLayout>
+</LinearLayout>

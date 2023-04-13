@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_background"
+        tools:context=".create.ClassConstructor">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_img_bgr_top"
+            android:layout_below="@+id/actionBarCreate"
+            android:layout_alignParentEnd="true"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_img_bgr_bot"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            tools:ignore="ContentDescription"/>
+
+        <RelativeLayout
+            android:id="@+id/actionBarCreate"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/toolbar_background"
+            android:elevation="5dp">
+
+            <ImageView
+                android:id="@+id/backCreate"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:onClick="onBackHome"
+                android:padding="15dp"
+                android:src="@drawable/ic_back"
+                tools:ignore="ContentDescription"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/backCreate"
+                android:text="@string/createClass"
+                android:tag="createClass"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/backDone"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:onClick="doneCreate"
+                android:padding="15dp"
+                android:src="@drawable/ic_done"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/actionBarCreate"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/subject_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/subjectTitle"
+                        android:tag="subjectTitle"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/txt_subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cus_background_corner_10_white"
+                        android:hint="@string/enterSubjectTitle"
+                        android:textColorHint="@color/color_2"
+                        android:tag="enterSubjectTitle"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:padding="15dp"
+                        android:textSize="18sp"
+                        android:imeOptions="actionDone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/semester"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subject_title"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/semester"
+                        android:tag="enterSubjectTitle"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cus_background_corner_10_white"
+                        android:orientation="vertical"
+                        android:paddingRight="30dp"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp">
+
+                        <LinearLayout
+                            android:id="@+id/btn_start_day"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/beginDate"
+                                android:tag="beginDate"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/ic_error"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/ic_error"
+                                android:layout_gravity="center_vertical"
+                                tools:ignore="ContentDescription"/>
+
+                            <TextView
+                                android:id="@+id/txt_start_day"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Th4, 24 thg 8, 2022"
+                                android:textColor="@color/text_color_primary"
+                                android:textSize="14sp"
+                                android:gravity="end"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btn_end_day"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/endDate"
+                                android:tag="endDate"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/txt_end_day"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Th4, 24 thg 8, 2022"
+                                android:textColor="@color/text_color_primary"
+                                android:textSize="14sp"
+                                android:gravity="end"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/day_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/semester"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/dayOff"
+                        android:tag="dayOff"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cus_background_corner_10_white"
+                        android:orientation="vertical"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/cus_line_bottom_white"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="15dp"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/holiday"
+                                android:tag="holiday"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <Switch
+                                android:id="@+id/sw_off_holiday"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end|center_vertical"
+                                android:paddingTop="3dp"
+                                android:paddingBottom="3dp"
+                                android:thumb="@drawable/thumb"
+                                android:track="@drawable/cus_track_switch" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btn_add_day_off"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="10dp"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/dayOff"
+                                android:tag="datOff"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_weight="1"
+                                android:gravity="end|center_vertical"
+                                android:src="@drawable/ic_add"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rcv_day_off"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/day_off"
+                    android:layout_alignParentBottom="true">
+
+                    <LinearLayout
+                        android:id="@+id/lessonModel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/timeTable"
+                            android:tag="timeTable"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                        <ImageView
+                            android:id="@+id/btnCrateTableTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_add_black"
+                            tools:ignore="ContentDescription"/>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvTableTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/lessonModel"
+                        android:layout_alignParentBottom="true"
+                        android:minHeight="600dp"
+                        android:overScrollMode="never"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+</layout>

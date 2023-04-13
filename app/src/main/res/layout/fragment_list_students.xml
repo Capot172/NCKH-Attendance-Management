@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background_fragment"
+    tools:context=".function.class_list.Student.ListStudents">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_add"
+        app:tint="@color/white_no_change"
+        app:backgroundTint="@color/btn_color_primary"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fabImport"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="90dp"
+        android:src="@drawable/exel"
+        android:visibility="invisible"
+        app:tint="@color/white_no_change"
+        app:backgroundTint="@color/btn_color_primary"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="90dp"
+        android:visibility="invisible"
+        app:backgroundTint="@color/btn_color_primary"
+        android:src="@drawable/people"
+        app:tint="@color/white_no_change"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:background="@color/background_fragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/numberAttendants"
+                    android:tag="numberAttendants"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"
+                    android:textFontWeight="500"
+                    android:fontFamily="sans-serif-medium"/>
+                <TextView
+                    android:id="@+id/tv_student_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"
+                    android:textFontWeight="500"
+                    android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content">
+                <SearchView
+                    android:id="@+id/search_student"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/cus_search_view"
+                    app:queryHint="@string/enter_name"
+                    android:tag="enter_name"
+                    android:iconifiedByDefault="false"
+                    android:elevation="5dp"
+                    app:layout_collapseMode="pin"
+                    app:queryBackground="@android:color/transparent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container_daytime"
+        android:layout_alignParentBottom="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:tag="appbar_scrolling_view_behavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+        <LinearLayout
+            android:id="@+id/noStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:background="@drawable/cus_background_corner_10_white"
+            android:padding="30dp"
+            android:layout_margin="30dp"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_img_empty_data"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/noStudent"
+                android:tag="noStudent"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/plsAddStudent"
+                android:tag="plsAddStudent"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/loadingPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/cus_background_corner_10_white"
+            android:padding="15dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/color_status_bar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressBar"
+                android:tag="loading"
+                android:text="@string/loading"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/cus_background_onbroading"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/first_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-light"
+            android:tag="title1"
+            android:text="@string/title1"
+            android:textColor="@color/black"
+            android:textFontWeight="500"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:id="@+id/second_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:tag="version"
+            android:text="@string/version"
+            android:textColor="@color/black"
+            android:textFontWeight="500"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/img_screen_1" />
+
+        <TextView
+            android:id="@+id/third_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:tag="three_type_of_attendance"
+            android:text="@string/three_type_of_attendance"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

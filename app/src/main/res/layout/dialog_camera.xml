@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:elevation="5dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/cus_background_corner_10_white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_camera_blue"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/text_login"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="7dp"
+        android:text="@string/request"
+        android:tag="request"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:layout_marginEnd="10dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/txt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:tag="cancel"
+            android:textAllCaps="false"
+            android:background="@null"
+            android:textFontWeight="500"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/txt_oke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Licensing"
+            android:tag="Licencing"
+            android:background="@null"
+            android:textFontWeight="500"
+            android:fontFamily="sans-serif-medium"
+            android:textAllCaps="false"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+</LinearLayout>

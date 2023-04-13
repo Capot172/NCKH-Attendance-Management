@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/cus_background_corner_10_white"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_student"
+            android:tag="enter_student"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/rdg_container_import"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rdb_from_clipboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/from_clipboard"
+                android:tag="from_clipboard"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:checked="true"
+                android:buttonTint="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/rdb_from_excel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/from_exel"
+                android:tag="from_exel"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:buttonTint="@color/black"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/btn_import_deniel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/cancel"
+                android:tag="cancel"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:backgroundTint="@color/line_color"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn_import_accept"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:backgroundTint="@color/btn_color"
+                android:text="@string/ok"
+                android:tag="ok"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

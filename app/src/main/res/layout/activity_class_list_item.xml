@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".function.class_list.ClassListItem">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/acb_list_class"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar_background"
+        app:title="@string/classDetails"
+        android:layout_alignParentTop="true"
+        android:tag="classDetails"
+        app:titleTextColor="@color/black"
+        android:elevation="5dp"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_slide_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/nav_bottom_view"
+        android:layout_below="@id/acb_list_class"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/nav_list_class"
+        app:itemTextColor="@color/text_nav"
+        app:itemIconTint="@color/text_nav"
+        android:background="@color/primary_background"
+        app:itemBackground="@drawable/cus_line_above"/>
+
+</RelativeLayout>

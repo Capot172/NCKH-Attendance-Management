@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/txt_present"
+        android:id="@+id/menu_present"
+        android:icon="@drawable/ic_present"/>
+
+    <item android:title="@string/txt_absent"
+        android:id="@+id/menu_absent"
+        android:icon="@drawable/ic_absent"/>
+</menu>

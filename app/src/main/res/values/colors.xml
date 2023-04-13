@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <!-- Color primary -->
+    <color name="white_no_change">#FFFFFF</color>
+    <color name="black_no_change">#000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+<!--    set color activity main-->
+    <color name="color_status_bar">#8FB2D9</color>
+    <color name="color_background_main">#8FB2D9</color>
+    <color name="toolbar_background">#B9D7EA</color>
+    <color name="color_img_create_lesson">#B9D7EA</color>
+    <color name="color_btn_report">#B9D7EA</color>
+    <color name="back_ground_btn_delete">#FFFFFFFF</color>
+    <color name="class_background">#FFFFFFFF</color>
+    <color name="text_clock_background">#FFFFFFFF</color>
+    <color name="background_time">#F7FBFC</color>
+    <color name="item_subject">#F7FBFC</color>
+
+    <!--    set color lessonModels-->
+    <color name="color_column">#8FB2D9</color>
+    <color name="background_fragment">#FFFFFF</color>
+    <color name="color_btn_report_non">#FFFFFF</color>
+    <color name="color_btn_lesson">#B9D7EA</color>
+    <color name="color_search">#D3E4F1</color>
+    <color name="color_icon_navi">#FF000000</color>
+    <color name="text_color_primary">#4D4949</color>
+    <color name="btn_color">#A2D7F4</color>
+    <color name="color_2">#7D7D7D</color>
+    <color name="primary_background">#E4EFF5</color>
+    <color name="primary_background_2">#E4EFF5</color>
+
+    <color name="background_student_item">#E4EFF5</color>
+    <color name="background_detail">#FFFFFFFF</color>
+    <color name="lessons_detail">#E4EFF5</color>
+    <color name="btn_report_background">#B9D7EA</color>
+
+    <color name="second_background">#F7FBFC</color>
+    <color name="pastel_red">#F27373</color>
+    <color name="pastel_yellow">#F8FC2A</color>
+    <color name="pastel_green">#53C781</color>
+    <color name="btn_color_primary">#769FCD</color>
+    <color name="color_circle_student_inf">#8FB2D9</color>
+
+    <color name="text_login">#7A7A7A</color>
+    <color name="color_grey">#D9D9D9</color>
+    <color name="add_face">#D9D9D9</color>
+    <color name="color_grey_50">#80D9D9D9</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="line_color">#D9D9D9</color>
+    <color name="color_detail">#545353</color>
+    <color name="dark_purple">#C9C0E2</color>
+
+    <color name="tfe_color_primary">#ffa800</color>
+    <color name="tfe_color_primary_dark">#ff6f00</color>
+    <color name="tfe_color_accent">#425066</color>
+
+    <color name="tfe_semi_transparent">#66000000</color>
+    <color name="color_dark_blue">#374151</color>
+</resources>
